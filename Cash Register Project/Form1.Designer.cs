@@ -28,7 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(77, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
             // 
             // Form1
             // 
@@ -36,14 +46,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(750, 500);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
     }
 }
 
