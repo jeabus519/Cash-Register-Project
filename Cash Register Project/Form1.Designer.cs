@@ -208,6 +208,7 @@
             this.changeButton.TabIndex = 12;
             this.changeButton.Text = "Calculate Change";
             this.changeButton.UseVisualStyleBackColor = true;
+            this.changeButton.Click += new System.EventHandler(this.changeButton_Click);
             // 
             // changeLabel
             // 
@@ -233,6 +234,7 @@
             this.recieptButton.TabIndex = 14;
             this.recieptButton.Text = "Print Reciept";
             this.recieptButton.UseVisualStyleBackColor = true;
+            this.recieptButton.Click += new System.EventHandler(this.recieptButton_Click);
             // 
             // subtotalOutput
             // 
@@ -315,6 +317,7 @@
             // 
             // tenderedInput
             // 
+            this.tenderedInput.DecimalPlaces = 2;
             this.tenderedInput.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tenderedInput.Location = new System.Drawing.Point(131, 447);
             this.tenderedInput.Name = "tenderedInput";

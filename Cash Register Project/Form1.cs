@@ -58,5 +58,22 @@ namespace Cash_Register_Project
             //displays the total
             totalOutput.Text = total.ToString("0.00");
         }
+
+        private void changeButton_Click(object sender, EventArgs e)
+        {
+            //sets tendered to the correct value
+            tendered = Convert.ToInt16(tenderedInput.Value);
+
+            //calculates change
+            change = tendered - total;
+
+            //displays change
+            changeOutput.Text = change.ToString("0.00");
+        }
+
+        private void recieptButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
