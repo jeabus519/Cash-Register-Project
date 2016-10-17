@@ -128,6 +128,7 @@
             this.totalButton.TabIndex = 5;
             this.totalButton.Text = "Total";
             this.totalButton.UseVisualStyleBackColor = true;
+            this.totalButton.Click += new System.EventHandler(this.totalButton_Click);
             // 
             // subtotalLabel
             // 
