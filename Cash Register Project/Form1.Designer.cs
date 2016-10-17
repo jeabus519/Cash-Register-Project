@@ -61,11 +61,11 @@
             // 
             this.titleLabel.Font = new System.Drawing.Font("Gabriola", 35F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.titleLabel.ForeColor = System.Drawing.Color.Gold;
-            this.titleLabel.Location = new System.Drawing.Point(187, 0);
+            this.titleLabel.Location = new System.Drawing.Point(134, 0);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(376, 90);
+            this.titleLabel.Size = new System.Drawing.Size(552, 90);
             this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "The Broken Drum Inn";
+            this.titleLabel.Text = "The Broken Drum Tavern and Inn";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // sloganLabel
@@ -73,7 +73,7 @@
             this.sloganLabel.AutoSize = true;
             this.sloganLabel.Font = new System.Drawing.Font("Gabriola", 20F, System.Drawing.FontStyle.Bold);
             this.sloganLabel.ForeColor = System.Drawing.Color.Gold;
-            this.sloganLabel.Location = new System.Drawing.Point(291, 64);
+            this.sloganLabel.Location = new System.Drawing.Point(324, 64);
             this.sloganLabel.Name = "sloganLabel";
             this.sloganLabel.Size = new System.Drawing.Size(152, 50);
             this.sloganLabel.TabIndex = 1;
@@ -329,7 +329,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(750, 650);
+            this.ClientSize = new System.Drawing.Size(800, 650);
             this.Controls.Add(this.tenderedInput);
             this.Controls.Add(this.mealInput);
             this.Controls.Add(this.muttonInput);
