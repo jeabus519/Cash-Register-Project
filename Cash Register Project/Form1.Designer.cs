@@ -47,14 +47,14 @@
             this.taxOutput = new System.Windows.Forms.Label();
             this.totalOutput = new System.Windows.Forms.Label();
             this.changeOutput = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            this.meadInput = new System.Windows.Forms.NumericUpDown();
+            this.muttonInput = new System.Windows.Forms.NumericUpDown();
+            this.mealInput = new System.Windows.Forms.NumericUpDown();
+            this.tenderedInput = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.meadInput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.muttonInput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mealInput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tenderedInput)).BeginInit();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -274,52 +274,52 @@
             this.changeOutput.TabIndex = 21;
             this.changeOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown1
+            // meadInput
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(156, 157);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.meadInput.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.meadInput.Location = new System.Drawing.Point(156, 157);
+            this.meadInput.Maximum = new decimal(new int[] {
             25,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(50, 30);
-            this.numericUpDown1.TabIndex = 22;
+            this.meadInput.Name = "meadInput";
+            this.meadInput.Size = new System.Drawing.Size(50, 30);
+            this.meadInput.TabIndex = 22;
             // 
-            // numericUpDown2
+            // muttonInput
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown2.Location = new System.Drawing.Point(156, 192);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.muttonInput.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.muttonInput.Location = new System.Drawing.Point(156, 192);
+            this.muttonInput.Maximum = new decimal(new int[] {
             25,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(50, 30);
-            this.numericUpDown2.TabIndex = 23;
+            this.muttonInput.Name = "muttonInput";
+            this.muttonInput.Size = new System.Drawing.Size(50, 30);
+            this.muttonInput.TabIndex = 23;
             // 
-            // numericUpDown3
+            // mealInput
             // 
-            this.numericUpDown3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown3.Location = new System.Drawing.Point(156, 227);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.mealInput.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mealInput.Location = new System.Drawing.Point(156, 227);
+            this.mealInput.Maximum = new decimal(new int[] {
             25,
             0,
             0,
             0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(50, 30);
-            this.numericUpDown3.TabIndex = 24;
+            this.mealInput.Name = "mealInput";
+            this.mealInput.Size = new System.Drawing.Size(50, 30);
+            this.mealInput.TabIndex = 24;
             // 
-            // numericUpDown4
+            // tenderedInput
             // 
-            this.numericUpDown4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown4.Location = new System.Drawing.Point(131, 447);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(75, 30);
-            this.numericUpDown4.TabIndex = 25;
+            this.tenderedInput.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenderedInput.Location = new System.Drawing.Point(131, 447);
+            this.tenderedInput.Name = "tenderedInput";
+            this.tenderedInput.Size = new System.Drawing.Size(75, 30);
+            this.tenderedInput.TabIndex = 25;
             // 
             // Form1
             // 
@@ -327,10 +327,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(750, 650);
-            this.Controls.Add(this.numericUpDown4);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.tenderedInput);
+            this.Controls.Add(this.mealInput);
+            this.Controls.Add(this.muttonInput);
+            this.Controls.Add(this.meadInput);
             this.Controls.Add(this.changeOutput);
             this.Controls.Add(this.totalOutput);
             this.Controls.Add(this.taxOutput);
@@ -353,10 +353,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.meadInput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.muttonInput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mealInput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tenderedInput)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,10 +383,10 @@
         private System.Windows.Forms.Label taxOutput;
         private System.Windows.Forms.Label totalOutput;
         private System.Windows.Forms.Label changeOutput;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown meadInput;
+        private System.Windows.Forms.NumericUpDown muttonInput;
+        private System.Windows.Forms.NumericUpDown mealInput;
+        private System.Windows.Forms.NumericUpDown tenderedInput;
     }
 }
 
