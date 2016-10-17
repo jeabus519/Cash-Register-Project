@@ -51,6 +51,7 @@
             this.muttonInput = new System.Windows.Forms.NumericUpDown();
             this.mealInput = new System.Windows.Forms.NumericUpDown();
             this.tenderedInput = new System.Windows.Forms.NumericUpDown();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.meadInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.muttonInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mealInput)).BeginInit();
@@ -319,17 +320,37 @@
             // 
             this.tenderedInput.DecimalPlaces = 2;
             this.tenderedInput.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenderedInput.Location = new System.Drawing.Point(131, 447);
+            this.tenderedInput.Location = new System.Drawing.Point(122, 447);
+            this.tenderedInput.Maximum = new decimal(new int[] {
+            750,
+            0,
+            0,
+            0});
             this.tenderedInput.Name = "tenderedInput";
-            this.tenderedInput.Size = new System.Drawing.Size(75, 30);
+            this.tenderedInput.Size = new System.Drawing.Size(84, 30);
             this.tenderedInput.TabIndex = 25;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 3;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Gabriola", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Gold;
+            this.button1.Location = new System.Drawing.Point(580, 288);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(208, 47);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "New Order";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SlateGray;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(800, 650);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tenderedInput);
             this.Controls.Add(this.mealInput);
             this.Controls.Add(this.muttonInput);
@@ -390,6 +411,7 @@
         private System.Windows.Forms.NumericUpDown muttonInput;
         private System.Windows.Forms.NumericUpDown mealInput;
         private System.Windows.Forms.NumericUpDown tenderedInput;
+        private System.Windows.Forms.Button button1;
     }
 }
 

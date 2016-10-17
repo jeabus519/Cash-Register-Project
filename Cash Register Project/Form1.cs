@@ -86,7 +86,7 @@ namespace Cash_Register_Project
 
             formGraphics.DrawString("The Broken Drum", consolasFont, blackBrush, 350, 180);
             formGraphics.DrawString("Tavern and Inn", consolasFont, blackBrush, 355, 200);
-            formGraphics.DrawString("12th of Wintervane, 300", consolasFont, blackBrush, 325, 260);
+            formGraphics.DrawString("12th of Deepsnow, 392", consolasFont, blackBrush, 325, 260);
 
             formGraphics.DrawString("Mead", consolasFont, blackBrush, 325, 300);
             formGraphics.DrawString("Mutton", consolasFont, blackBrush, 325, 320);
@@ -115,6 +115,25 @@ namespace Cash_Register_Project
             formGraphics.DrawString("$" + change.ToString("0.00"), consolasFont, blackBrush, 530, 480, format);
 
             formGraphics.DrawString("Thank you! Come again!", consolasFont, blackBrush, 325, 530);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //clears reciept
+            Graphics formGraphics = this.CreateGraphics();
+            formGraphics.Clear(Color.DimGray);
+
+            //resets numericalupdown values
+            meadInput.Value = 0;
+            muttonInput.Value = 0;
+            mealInput.Value = 0;
+            tenderedInput.Value = 0;
+
+            //resets output labels
+            subtotalOutput.Text = "";
+            taxOutput.Text = "";
+            totalOutput.Text = "";
+            changeOutput.Text = "";
         }
     }
 }
