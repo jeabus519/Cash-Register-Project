@@ -52,6 +52,7 @@
             this.mealInput = new System.Windows.Forms.NumericUpDown();
             this.tenderedInput = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
+            this.errorLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.meadInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.muttonInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mealInput)).BeginInit();
@@ -344,12 +345,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Font = new System.Drawing.Font("Gabriola", 10F, System.Drawing.FontStyle.Bold);
+            this.errorLabel.ForeColor = System.Drawing.Color.Gold;
+            this.errorLabel.Location = new System.Drawing.Point(575, 399);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(0, 26);
+            this.errorLabel.TabIndex = 27;
+            this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(800, 650);
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tenderedInput);
             this.Controls.Add(this.mealInput);
@@ -412,6 +425,7 @@
         private System.Windows.Forms.NumericUpDown mealInput;
         private System.Windows.Forms.NumericUpDown tenderedInput;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label errorLabel;
     }
 }
 

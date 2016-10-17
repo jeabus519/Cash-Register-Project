@@ -8,6 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/* Michael Peterman
+ * October 16, 2016
+ * ICS3U Unit 2 Summative Project
+ * Purpose: Create a cash register program for a fast food diner that will take a customer’s order,
+ * process the cost, and calculate the change.  The user can then print a receipt for the customer.
+ */
+
 namespace Cash_Register_Project
 {
     public partial class Form1 : Form
