@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 /* Michael Peterman
  * October 16, 2016
@@ -92,34 +93,44 @@ namespace Cash_Register_Project
             formGraphics.FillRectangle(whiteBrush, 300, 150, 250, 450);
 
             formGraphics.DrawString("The Broken Drum", consolasFont, blackBrush, 350, 180);
+            Thread.Sleep(500);
             formGraphics.DrawString("Tavern and Inn", consolasFont, blackBrush, 355, 200);
+            Thread.Sleep(500);
             formGraphics.DrawString("12th of Deepsnow, 392", consolasFont, blackBrush, 325, 260);
+            Thread.Sleep(500);
 
             formGraphics.DrawString("Mead", consolasFont, blackBrush, 325, 300);
-            formGraphics.DrawString("Mutton", consolasFont, blackBrush, 325, 320);
-            formGraphics.DrawString("Meal", consolasFont, blackBrush, 325, 340);
-
             formGraphics.DrawString("x" + meadCount, consolasFont, blackBrush, 400, 300);
-            formGraphics.DrawString("x" + muttonCount, consolasFont, blackBrush, 400, 320);
-            formGraphics.DrawString("x" + mealCount, consolasFont, blackBrush, 400, 340);
-
             formGraphics.DrawString(meadCost.ToString() + "  @", consolasFont, blackBrush, 530, 300, format);
+            Thread.Sleep(500);
+            formGraphics.DrawString("Mutton", consolasFont, blackBrush, 325, 320);
+            formGraphics.DrawString("x" + muttonCount, consolasFont, blackBrush, 400, 320);
             formGraphics.DrawString(muttonCost.ToString() + " @", consolasFont, blackBrush, 530, 320, format);
+            Thread.Sleep(500);
+            formGraphics.DrawString("Meal", consolasFont, blackBrush, 325, 340);
+            formGraphics.DrawString("x" + mealCount, consolasFont, blackBrush, 400, 340);
             formGraphics.DrawString(mealCost.ToString() + " @", consolasFont, blackBrush, 530, 340, format);
+            Thread.Sleep(500);            
 
             formGraphics.DrawString("Subtotal", consolasFont, blackBrush, 325, 380);
-            formGraphics.DrawString("Kings Tax", consolasFont, blackBrush, 325, 400);
-            formGraphics.DrawString("Total", consolasFont, blackBrush, 325, 420);
-
             formGraphics.DrawString("$" + subtotal.ToString("0.00"), consolasFont, blackBrush, 530, 380, format);
+            Thread.Sleep(500);
+
+            formGraphics.DrawString("Kings Tax", consolasFont, blackBrush, 325, 400);
             formGraphics.DrawString("$" + tax.ToString("0.00"), consolasFont, blackBrush, 530, 400, format);
+            Thread.Sleep(500);
+
+            formGraphics.DrawString("Total", consolasFont, blackBrush, 325, 420);
             formGraphics.DrawString("$" + total.ToString("0.00"), consolasFont, blackBrush, 530, 420, format);
+            Thread.Sleep(500);
 
             formGraphics.DrawString("Tendered", consolasFont, blackBrush, 325, 460);
-            formGraphics.DrawString("Change", consolasFont, blackBrush, 325, 480);
-
             formGraphics.DrawString("$" + tendered.ToString("0.00"), consolasFont, blackBrush, 530, 460, format);
+            Thread.Sleep(500);
+
+            formGraphics.DrawString("Change", consolasFont, blackBrush, 325, 480);
             formGraphics.DrawString("$" + change.ToString("0.00"), consolasFont, blackBrush, 530, 480, format);
+            Thread.Sleep(500);
 
             formGraphics.DrawString("Thank you! Come again!", consolasFont, blackBrush, 325, 530);
         }
